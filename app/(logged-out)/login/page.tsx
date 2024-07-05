@@ -11,7 +11,6 @@ const Login = () => {
 	const handleLogin = async (e: React.FormEvent) => {
 		e.preventDefault();
 
-		// TODO: 登录处理
 		const res = await fetch("http://your-rust-backend/api/login", {
 			method: "POST",
 			headers: {

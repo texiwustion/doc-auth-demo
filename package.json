@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/language": "^6.10.2",
+    "@codemirror/state": "^6.4.1",
+    "codemirror": "^6.0.1",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "y-codemirror.next": "^0.3.5",
     "y-websocket": "^2.0.3",
     "yjs": "^13.6.18"
   },
