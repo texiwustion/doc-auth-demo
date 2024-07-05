@@ -29,7 +29,7 @@ function DataProvider({ id }: { id: string }) {
 
         const provider = new WebsocketProvider(
             "ws://localhost:8000",
-            "ws",
+            `${id}`,
             doc,
             { disableBc: true }
         );
@@ -52,6 +52,8 @@ function DataProvider({ id }: { id: string }) {
                 setAuth(true);
             }
         });
+
+        return () => provider.disconnect();
     }, []);
 
     {
@@ -94,7 +96,6 @@ function DocRenderer({
 
         return () => {
             view.destroy();
-            provider.disconnect();
         };
     }, []);
 
