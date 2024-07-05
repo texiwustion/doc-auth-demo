@@ -11,7 +11,7 @@ const Login = () => {
 	const handleLogin = async (e: React.FormEvent) => {
 		e.preventDefault();
 
-		const res = await fetch("http://your-rust-backend/api/login", {
+		const res = await fetch("http://localhost:8000/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
