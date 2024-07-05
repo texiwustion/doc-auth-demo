@@ -15,10 +15,13 @@ const Documents = () => {
 
 	return (
 		<div>
-			<h1>Documents</h1>
-			<ul>
+			<h1 className="text-4xl underline m-4">Documents</h1>
+			<ul className="w-full flex justify-center items-center flex-col gap-4">
 				{documents.map(doc => (
-					<li key={doc.id}>
+					<li
+						key={doc.id}
+						className="text-2xl border-slate-500 rounded-sm border-2"
+					>
 						<Link href={`/document/${doc.id}`}>{doc.title}</Link>
 					</li>
 				))}

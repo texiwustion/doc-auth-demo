@@ -29,7 +29,10 @@ const Login = () => {
 	};
 
 	return (
-		<form onSubmit={handleLogin}>
+		<form
+			onSubmit={handleLogin}
+			className="flex flex-col items-center justify-center gap-4"
+		>
 			<input
 				type="text"
 				placeholder="Username"
